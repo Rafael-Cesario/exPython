@@ -1,0 +1,2 @@
+# Exercícios Python
+Aprendendo python
