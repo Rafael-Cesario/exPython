@@ -1,0 +1,1 @@
+#verificar a primeira palavra de uma frase
