@@ -6,7 +6,7 @@ casa = float(input('Valor da casa: '))
 salario = float(input('Salário: '))
 anos = int(input('Quantos anos pretende pagar: '))
 negado = salario * 30 / 100
-mensal = casa / (anos*12)
+mensal = casa / (anos * 12)
 print('\033[34mO valor mensal da casa é {:.2f}'.format(mensal))
 if mensal > negado:
     print('\033[31mInfelizmente isso excede 30% do seu salário')
