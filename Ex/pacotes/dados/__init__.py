@@ -16,8 +16,18 @@ def leiaDinheiro():
 def leiaInt(txt):
     while True:
         try:
-            v1 = int(input(f'{estilos.letra("Azul")}{txt}{estilos.letra("Default")}'))
+            v1 = int(input(f'{estilos.letra(txt, "Azul")}'))
         except ValueError:
-            print(f"{estilos.letra('Vermelho')}Valor digitado não é valido.{estilos.letra('Default')}")
+            print(estilos.letra("Valor digitado não é valido", "Vermelho"))
+        else:
+            return v1
+
+
+def leiaFloat(txt):
+    while True:
+        try:
+            v1 = float(input(estilos.letra(txt, "Verde")).strip().replace(",", "."))
+        except Exception as error:
+            print(estilos.letra("Valor digitado não é valido", "Vermelho"))
         else:
             return v1
